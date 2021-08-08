@@ -1,0 +1,109 @@
+Microsoft Windows [Version 10.0.19041.1083]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>cd/d E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git init
+Initialized empty Git repository in E:/MCA COLLEGE STUFF/SUMMER TERM/SE/jenkins/.git/
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HelloWorld.class
+        proj123.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git config --global user.name "HonmaneMayur"
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git config user.email "sunilhonmane05@gmail.com"
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git add .
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   HelloWorld.class
+        new file:   proj123.java
+
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git commit -m "first commit"
+[master (root-commit) 46ec01e] first commit
+ 2 files changed, 11 insertions(+)
+ create mode 100644 HelloWorld.class
+ create mode 100644 proj123.java
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git remote add https://github.com/HonmaneMayur/jenkinsexample.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git remote add origin https://github.com/HonmaneMayur/jenkinsexample.git
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git push - u origin master
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: failed to push some refs to '-'
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git push -u origin master
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default):
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 757 bytes | 252.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HonmaneMayur/jenkinsexample.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git add readme.txt
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git commit -m "second commit"
+[master 5124840] second commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.txt
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 162.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HonmaneMayur/jenkinsexample.git
+   46ec01e..5124840  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+E:\MCA COLLEGE STUFF\SUMMER TERM\SE\jenkins>
+
